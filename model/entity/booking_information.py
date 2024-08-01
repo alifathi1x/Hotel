@@ -1,5 +1,5 @@
 from datetime import date
-from sqlalchemy import Integer, String, DateTime, Column, Boolean
+from sqlalchemy import Integer, DateTime, Column, Boolean
 from model.entity.base import Base
 from model.tools.validator import *
 
