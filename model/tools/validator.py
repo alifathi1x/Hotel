@@ -2,6 +2,11 @@ import re
 
 room1 = "vip"
 room2 = "normal"
+def room_price_validator(room_price):
+    if room_price == room1:
+        return 1000
+    elif room_price == room2:
+        return 500
 
 def room_type_validator(room_type):
     if room_type == room1:

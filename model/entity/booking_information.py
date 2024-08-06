@@ -41,10 +41,11 @@ class BookingInformation(Base):
     def get_room_type(self):
         return self._room_type
     def set_room_type(self,room_type):
-        if room_type_validator(room_type):
+        if room_type == room_type_validator and room_price_validator:
             self._room_type = room_type
         else:
             raise ValueError("Invalid Room")
+
 
     id = property(get_id,set_id)
     room_number = property(get_room_number,set_room_number)
