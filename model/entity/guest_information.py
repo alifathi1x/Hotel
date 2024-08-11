@@ -62,7 +62,7 @@ class GuestInformation(Base):
     def get_phone(self):
         return self._phone
     def set_phone(self,phone):
-        if isinstance(phone,int) and phone_validator(phone):
+        if isinstance(phone,int):
             self._phone = phone
         else:
             raise ValueError("Invalid Phone Number")
@@ -81,4 +81,4 @@ class GuestInformation(Base):
     birth_date = property(get_birth_date,set_birth_date)
     address = property(get_address,set_address)
     phone = property(get_phone,set_phone)
-
+    email = property(get_email,set_email)
